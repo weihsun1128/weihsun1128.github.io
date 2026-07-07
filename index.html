@@ -252,28 +252,48 @@
                     <span></span>
                     <ul class="social-list">
                         <li><a href="https://www.instagram.com/weihsun1128/" target="_blank"><i class="ph-fill ph-instagram-logo"></i></a></li>
-                        <li><a href="https://www.facebook.com/wweihsun/" target="_blank"><i class="ph-fill ph-facebook-logo"></i></a></li>
+                        <!-- <li><a href="https://www.facebook.com/wweihsun/" target="_blank"><i class="ph-fill ph-facebook-logo"></i></a></li> -->
                         <li><a href="https://www.linkedin.com/in/%E9%BB%83%E7%85%92%E8%96%B01128/" target="_blank"><i class="ph-fill ph-linkedin-logo"></i></a></li>
-                        <li><a href="https://www.threads.com/@weihsun1128" target="_blank"><i class="ph-fill ph-threads-logo"></i></a></li>
+                        <!-- <li><a href="https://www.threads.com/@weihsun1128" target="_blank"><i class="ph-fill ph-threads-logo"></i></a></li> -->
                     </ul>
                 </div>
-                <div class="con-right">
+                <form class="con-right" id="myForm" onsubmit="getValues(event)">
                     <div class="form-row">
-                        <div class="form-group yourname">
+                        <div class="form-group">
                             <h2>姓名：</h2>
-                            <input type="text" placeholder="請輸入姓名">
+                            <input id="name" name="name" type="text" placeholder="請輸入姓名" required>
                         </div>
-                        <div class="form-group yourmail">
-                            <h2>電子郵件：</h2>
-                            <input type="email" placeholder="請輸入電子郵件">
+                        <div class="form-group">
+                            <h2>職稱：</h2>
+                            <input id="jobtitle" name="jobtitle" type="text" placeholder="請輸入職稱">
+                        </div>
+                        <div class="form-group">
+                            <h2>聯絡電話：</h2>
+                            <input id="phone" name="phone" type="text" placeholder="請輸入聯絡電話" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>聯絡信箱：</h2>
+                            <input id="email" name="email" type="email" placeholder="請輸入聯絡信箱" required>
                         </div>
                     </div>
+                    <div class="form-group yoursubject">
+                        <h2>聯絡目的：</h2>
+                        <div class="select-box">
+                            <select id="subject" name="subject">
+                            <option value="">請選擇聯絡目的</option>
+                            <option value="工作機會">工作機會</option>
+                            <option value="合作邀約">合作邀約</option>
+                            <option value="一般詢問">一般詢問</option>
+                            <option value="其他">其他</option>
+                            </select>
+                        </div>
+                    </div> 
                     <div class="form-group yourmessage">
-                        <h2>訊息：</h2>
-                        <input type="text" placeholder="請輸入訊息內容">
+                        <h2>內容：</h2>
+                        <textarea id="message" name="message" placeholder="請輸入訊息內容" required></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">送出</button>
-                </div>
+                    <button id="submitButton" type="submit" class="btn-submit">送出</button>
+                </form>
             </div>
         </div>
         <!------------------- 底下區塊 ------------------->
