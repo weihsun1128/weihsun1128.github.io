@@ -428,7 +428,6 @@ body{
 .pro-img {
     width: 70%;
     background: #A8DCE3;
-    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);/* 裁剪元素形狀 */
 }
 
 .pro-img img{
