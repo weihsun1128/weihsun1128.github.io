@@ -384,6 +384,9 @@ body{
 .pro-textthree{
     background-image: linear-gradient(#E6DFA4, #E6DFA4);
 }
+.pro-textfour{
+    background-image: linear-gradient(#BAB8D6, #BAB8D6);
+}
 
 .pro-texttwo:hover{
     background-size: 70% 5%; /* 滑過去長出來 */
@@ -423,6 +426,9 @@ body{
 }
 .pro-list .pro-item:nth-child(3) .hashtag li { 
     background-color: #D0C34F;
+}
+.pro-list .pro-item:nth-child(4) .hashtag li { 
+    background-color: #BAB8D6;
 }
 
 .pro-img {
