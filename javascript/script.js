@@ -68,7 +68,7 @@ $(function (){
     
     // 照片輪播
     const projects = {
-        1: ["img/pro1-1.png", "img/pro1-2.png", "img/pro1-3.png", "img/pro1-4.png", "img/pro1-5.png", "img/pro1-6.png", "img/pro1-7.png", "img/pro1-8.png", "img/pro1-9.png", "img/pro1-10.png", "img/pro1-11.png", "img/pro1-12.png", "img/pro1-13.png", "img/pro1-14.png"],
+        1: ["img/pro1-1.png", "img/pro1-2.png", "img/pro1-3.png", "img/pro1-4.png", "img/pro1-5.png", "img/pro1-6.png", "img/pro1-7.png", "img/pro1-8.png", "img/pro1-9.png", "img/pro1-10.png", "img/pro1-11.png", "img/pro1-12.png", "img/pro1-13.png", "img/pro1-14.png", "img/pro1-15.png", "img/pro1-16.png", "img/pro1-17.png", "img/pro1-18.png", "img/pro1-19.png", "img/pro1-20.png", "img/pro1-21.png"],
         2: ["img/pro2-1.png", "img/pro2-2.png", "img/pro2-3.png", "img/pro2-4.png", "img/pro2-5.png", "img/pro2-6.png", "img/pro2-7.png", "img/pro2-8.png", "img/pro2-9.png", "img/pro2-10.png", "img/pro2-11.png", "img/pro2-12.png", "img/pro2-13.png", "img/pro2-14.png", "img/pro2-15.png", "img/pro2-16.png", "img/pro2-17.png"],
         3: ["img/pro3-1.png", "img/pro3-2.png", "img/pro3-3.png", "img/pro3-4.png", "img/pro3-5.png", "img/pro3-6.png", "img/pro3-7.png", "img/pro3-8.png", "img/pro3-9.png", "img/pro3-10.png", "img/pro3-11.png", "img/pro3-12.png", "img/pro3-13.png", "img/pro3-14.png", "img/pro3-15.png", "img/pro3-16.png", "img/pro3-17.png", "img/pro3-18.png", "img/pro3-19.png", "img/pro3-20.png"],
         4: ["img/pro4-1.svg", "img/pro4-2.svg", "img/pro4-3.svg", "img/pro4-4.svg", "img/pro4-5.svg", "img/pro4-6.svg", "img/pro4-7.svg", "img/pro4-8.svg", "img/pro4-9.svg"]

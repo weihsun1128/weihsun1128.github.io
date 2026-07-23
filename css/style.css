@@ -422,13 +422,13 @@ body{
 }
 
 .pro-list .pro-item:nth-child(2) .hashtag li { 
-    background-color: #B1836F;
+    background-color: #BAB8D6;
 }
 .pro-list .pro-item:nth-child(3) .hashtag li { 
-    background-color: #D0C34F;
+    background-color: #B1836F;
 }
 .pro-list .pro-item:nth-child(4) .hashtag li { 
-    background-color: #BAB8D6;
+    background-color: #D0C34F;
 }
 
 .pro-img {
