@@ -37,16 +37,7 @@ body{
 .header .menu{
     display: flex;
     justify-content: center;
-}
-
-.menu li{
-    margin-right: 50px;
-    padding: 0 ;
-    position: relative;
-}
-
-.menu li:last-child{
-    margin-right: 0px;
+    gap: 50px;
 }
 
 .menu li a{

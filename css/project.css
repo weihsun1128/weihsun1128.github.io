@@ -1,0 +1,247 @@
+@import url("reset.css");
+
+@font-face {
+  font-family: "BlueWinter";
+  src: url('../fonts/BlueWinter.otf');
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400; /* 500、700 */
+  font-style: normal;
+  font-size: 16px;
+  background-color: #CDEBEF;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper {
+
+}
+
+.title {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.sec-title {  
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.third-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.forth-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ----------------上方標題列---------------- */
+.header{
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    border-bottom: 3px solid #000;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+.header .logo{
+    text-decoration: none;
+    color: #000;
+    font-family: "BlueWinter", sans-serif;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.menu li{}
+
+.menu li a{
+    display: block;
+    text-decoration-line: none;
+    padding: 12px 20px;
+    border-radius: 80px;
+    color: #000000;
+    font-size: 20px;
+    transition: 0.2s ;
+}
+
+.menu li:first-child a{
+    background-color: #000;
+    color: #fff;
+}
+.menu li:first-child a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.menu li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* 主視覺區塊 */
+.top-out {
+  width: 100%;
+}
+
+.top {
+  margin: 80px auto;
+  /* height: 480px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  /* padding-top: 80px; */
+
+
+}
+
+.left {}
+
+.left .title {
+  font-family: "BlueWinter", sans-serif;
+}
+
+.left .third-title {
+  margin-bottom: 30px;
+}
+
+.hashtag{
+
+  display: flex;
+  gap: 12px;
+}
+
+.hashtag li{
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 50px;
+  color: #000;
+  border: 3px solid #000;
+}
+
+
+
+.right{
+    position: relative;
+}
+
+.right .pro-img img {
+  width: 480px;
+}
+
+.right .demo-btn {
+  background-color: hsla(0, 0%, 0%, 0.613);
+  padding: 16px 32px;
+  border: 3px solid hsla(0, 0%, 100%, 0);
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  position: absolute;
+  right: 160px;
+  top: 120px;
+}
+
+.right .demo-btn:hover {
+  background-color: hsla(0, 0%, 100%, 0.613);
+  color: #000;
+  border: 3px solid #000;
+}
+
+/* 專案特色區塊 */
+.keyword{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+  margin-bottom: 80px;
+}
+.keyword li{
+  height: 320px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #000;
+  width: 280px;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.keyword img{
+    width: 80%;
+    margin-top: -30px;
+}
+
+
+
+/* .keyword li span{
+
+} */
+
+.keyword li .text{
+
+}
+
+/* .keyword li span i{
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  line-height: 50px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #f27373;
+} */
+
+.keyword li .forth-title{
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.keyword li p{
+  width: 200px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* 簡報區塊 */
+.imgarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  /* background-color: antiquewhite; */
+  /* width: 80%; */
+  margin: 50px auto;
+}
+.imgarea img {
+  width: 90%;
+}
