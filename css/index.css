@@ -771,23 +771,45 @@ body{
     margin-right: 20px;
 }
 
-.footer-right a{
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: #FFE0E0;
-    border-radius: 50%;
-    position: relative;
+.toTop{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 2px solid #000;
+
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  /* display: none; */
+
+    /* 一開始隱藏 */
+  opacity: 0;
+  visibility: hidden;
+
+  /* 往下偏一點 */
+  transform: translateY(20px);
+
+  transition: all .4s ease;
+
 }
 
-.footer-right a:hover{
-    background-color: #f27373;
+.toTop.show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
-.footer-right a i{
-    color: #000000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.toTop:hover{
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-5px);
 }

@@ -61,9 +61,27 @@ $(function () {
     $("html,body").animate({ scrollTop: blockD }, 800);
     return false;
   });
+ // 捲動到一定高度才顯示
+  $(window).scroll(function () {
+
+    console.log($(this).scrollTop());
+      if ($(this).scrollTop() > 800) {
+          $(".toTop").addClass("show");
+      } else {
+          $(".toTop").removeClass("show");
+      }
+
+  });
+
+  // 回到最上方
   $(".toTop").click(function () {
-    $("html,body").animate({ scrollTop: 0 }, 500);
-    return false;
+
+      $("html,body").animate({
+          scrollTop: 0
+      }, 500);
+
+      return false;
+
   });
   // 主視覺捲軸滑到該位置會再跑一次動畫
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/project.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
       rel="stylesheet"
@@ -42,7 +43,7 @@
       </ul>
 
       <!-- 主視覺區塊 -->
-      <div class="top-out">
+      <div class="top-out" data-aos="zoom-in-down">
         <div class="top">
           <div class="left">
             <h1 class="title">Sport Match</h1>
@@ -59,13 +60,13 @@
           </div>
           <div class="right">
             <div class="pro-img"><img src="img/Pro11.png" alt="" /></div>
-            <a href="#" class="demo-btn">系統展示影片</a>
+            <a href="https://youtu.be/mlFYIIGWcRs?si=bc8_u4xQ_GKHyPK2" class="demo-btn" target="_blank">系統展示影片</a>
           </div>
         </div>
       </div>
       <!-- 專案總覽區塊 -->
         <ul class="keyword">
-            <li>
+            <li  data-aos="flip-down">
                 <!-- <span><i class="ph-fill ph-map-pin"></i></span> -->
                 <img src="./img/map.png" alt="">
 
@@ -74,7 +75,7 @@
                   <p>快速搜尋附近的運動，輕鬆掌握場地位置、時間等資訊，找到最適合的運動。</p>
                 </div>
             </li>
-            <li>
+            <li  data-aos="flip-down">
                 <!-- <span><i class="ph-fill ph-users"></i></span> -->
                 <img src="./img/sport.png" alt="">
                 <div class="text">
@@ -82,7 +83,7 @@
                   <p>一鍵報名喜歡或有興趣的運動，與志同道合的夥伴一起享受運動樂趣。</p>
                 </div>
             </li>
-            <li>
+            <li  data-aos="flip-down">
                 <!-- <span><i class="ph-fill ph-star"></i></span> -->
                 <img src="./img/good.png" alt="">
                 <div class="text">
@@ -114,6 +115,18 @@
         <img src="img/pro1-19.png" alt="" />
         <img src="img/pro1-21.png" alt="" />
       </div>
+      <a href="#" class="toTop">To Top</a>
     </div>
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/project.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      
+      AOS.init({
+        // delay: 200,
+          duration: 800,
+          easing: 'ease-out',
+      });
+    </script>
   </body>
 </html>
