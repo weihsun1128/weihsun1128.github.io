@@ -1,6 +1,5 @@
 @import url("reset.css");
 
-
 @font-face {
   font-family: 'BlueWinter';
   src: url('../fonts/BlueWinter.otf');
@@ -17,7 +16,6 @@ body{
 .wrapper{
     margin: 0 auto;
     background-color: #FFE0E0;
-    /* overflow: hidden; 是為了橢圓區塊加的 */
 }
 
 /* ----------------上方標題列---------------- */

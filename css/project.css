@@ -9,14 +9,28 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 400; /* 500、700 */
   font-style: normal;
-  font-size: 16px;
-  background-color: #CDEBEF;
+  font-size: 14px;
   width: 1100px;
   margin: 0 auto;
 }
 
-.wrapper {
+body.sportmatch{
+  background-color: #CDEBEF;
 }
+
+body.unihub{
+  background-color: #D9D8E9;
+}
+
+body.bubbleco{
+  background-color: #F1E2CB;
+}
+
+body.blood{
+  background-color: #F09EA3;
+}
+
+.wrapper {}
 
 .title {
   font-size: 72px;
@@ -54,7 +68,6 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    
 }
 
 .header .logo{
@@ -64,7 +77,6 @@ body {
     font-size: 28px;
     display: flex;
     justify-content: center;
-    
 }
 
 .menu{
@@ -89,21 +101,17 @@ body {
     font-size: 20px;
     transition: 0.6s ;
 }
+/*  */
+.menu li a:not(.active):hover{
+    background-color: #f0f0f0;
+}
 
-.menu li:nth-child(1) a{
+.menu .active{
     background-color: #000;
     color: #fff;
 }
 
-.menu li a:hover{
-    background-color: #f0f0f0;
-}
-
 /* 主視覺區塊 */
-.top-out {
-  width: 100%;
-}
-
 .top {
   margin: 80px auto;
   display: flex;
@@ -117,23 +125,7 @@ body {
 .left .title {
   font-family: "BlueWinter", sans-serif;
   margin-bottom: 30px;
-  /* animation: fadeUpColor 1s ease forwards; */
 }
-
-/* @keyframes fadeUpColor {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  60% {
-    transform: translateX(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    color: #2e2e2e; 
-  }
-} */
 
 .left .third-title {
   margin-bottom: 30px;
@@ -160,6 +152,10 @@ body {
   width: 480px;
 }
 
+.right .pro-img .Pro44 {
+  width: 470px;
+}
+
 .right .demo-btn {
   background-color: hsla(0, 0%, 100%, 0.613);
   padding: 16px 32px;
@@ -169,8 +165,9 @@ body {
   text-decoration: none;
   transition: 0.3s;
   position: absolute;
-  right: 160px;
-  top: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .right .demo-btn:hover {
@@ -189,6 +186,7 @@ body {
 }
 .keyword li{
   height: 320px;
+  font-size: 16px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
