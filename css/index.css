@@ -349,7 +349,15 @@ body{
     overflow: hidden;
     margin-bottom: 50px;
 }
-
+.pro-link{
+    display: flex;          /* 跟原本 .pro-item 排版一樣 */
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
 .pro-text{
     padding: 60px 35px;
     background-image: linear-gradient(#A8DCE3, #A8DCE3);
