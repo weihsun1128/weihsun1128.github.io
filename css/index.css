@@ -10,7 +10,6 @@ body{
     font-weight: 400;
     font-style: normal;
 	font-size: 14px;
-    /* padding-top: 80px; */
 }
 
 .wrapper{
@@ -34,7 +33,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 40px;
 }
 
 .header .logo{
@@ -56,15 +54,15 @@ body{
 }
 
 .header .menu-btn i{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .header .menu{
     display: flex;
     justify-content: center;
     gap: 50px;
-    transform: translateX(100%);
-    transition: .3s;
+    /* transform: translateX(100%);
+    transition: .3s; */
 }
 
 .menu li a{
@@ -803,8 +801,13 @@ body{
 
 /* 手機 */
 @media (max-width: 768px){
+    /* 上方標題列 */
     .header{
-        padding: 0 20px;
+        position: relative;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .header .logo{
@@ -813,21 +816,39 @@ body{
 
     .header .menu-btn{
         display: block;
+        position: absolute;
+        right: 20px;
+        /* top: 0;
+        width: 100%; */
     }
 
     .header .menu{
         position:absolute;
-        top:80px;
-        right:0;
-        width:100%;
-        display:none;
-        flex-direction:column;
-        background:#fff;
-        border-bottom:3px solid #000;
-        transform: translateX(0);
+        top: 80px;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #fff;
+        border-bottom: 3px solid #000;
+        transform: translateX(100%);
+        transition: .3s;
     }
 
     .menu.show{
         display:flex;
+        transform:translateX(0);
     }
+
+    /* 主視覺區塊 */
+    .top{
+        height: 200px;
+        margin-top: 0;
+    }
+    .welcome{
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    }
+
 }
+
