@@ -7,10 +7,10 @@
 
 body{
 	font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 400;/* 500、700 */
+    font-weight: 400;
     font-style: normal;
 	font-size: 14px;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 }
 
 .wrapper{
@@ -30,6 +30,32 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.header .logo{
+    text-decoration: none;
+    color: #000;
+    font-family: 'BlueWinter', sans-serif;
+    font-size: 28px;
+    display: none;
+}
+
+.header .menu-btn{
+    display: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.header .menu-btn i{
+    font-size: 20px;
 }
 
 .header .menu{
@@ -61,6 +87,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
 .welcome{
@@ -763,4 +790,40 @@ body{
   background-color: #000;
   color: #fff;
   transform: translateY(-5px);
+}
+
+/* 響應式頁面 */
+/* 平板 */
+@media (max-width: 992px){
+
+}
+
+/* 手機 */
+@media (max-width: 768px){
+    .header{
+        padding: 0 20px;
+    }
+
+    .header .logo{
+        display: block;
+    }
+
+    .header .menu-btn{
+        display: block;
+    }
+
+    .header .menu{
+        position:absolute;
+        top:80px;
+        right:0;
+        width:100%;
+        display:none;
+        flex-direction:column;
+        background:#fff;
+        border-bottom:3px solid #000;
+    }
+
+    .menu.show{
+        display:flex;
+    }
 }

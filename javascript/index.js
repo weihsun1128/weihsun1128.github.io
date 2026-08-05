@@ -86,3 +86,7 @@ $(function () {
 
   // 主視覺捲軸滑到該位置會再跑一次動畫
 });
+
+$(".menu-btn").click(function () {
+    $(".menu").toggleClass("show");
+});
